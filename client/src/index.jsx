@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
+import querystring from 'querystring';
 
-import App from '../../../Overview/client/app.jsx';
-import CourseContent from '../../../Course-Content/client/src/components/CourseContent.jsx';
-import { Sidebar } from '../../../Sidebar/client/components/sidebar.jsx';
-import ReviewService from '../../../Reviews/client/src/components/reviewService.jsx';
+class Proxy extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-// ReactDOM.render(<App />, document.getElementById('Overview'));
-// ReactDOM.render(<CourseContent />, document.getElementById('Course-Content'));
-// ReactDOM.render(<Sidebar />, document.getElementById('Sidebar'));
-// ReactDOM.render(<ReviewService />, document.getElementById('Reviews'));
+  componentDidMount() {
+    let id = Number(querystring.parse(window.location.search)['?courseId']);
+    axios.get(`http://127.0.0.1:5001/?courseId=${id}`)
+      .then((response) => {
+        console.log(response.data);
+      });
+  }
 
+  render() {
+    return (
+      <div>Hi from proxy</div>
+    );
+  }
+
+}
+
+// ReactDOM.render(<Proxy/>, document.getElementById('proxy'));

@@ -22,7 +22,5 @@ module.exports = {
   output: {
     filename: 'proxyBundle.js',
     path: outputPath
-  },
-
-  watch: true
+  }
 };
