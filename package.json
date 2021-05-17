@@ -5,9 +5,7 @@
   "main": "server/index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon server/index.js",
-    "build": "webpack --config webpack.config.js --mode development --watch",
-    "prod": "webpack --config webpack.config.js --mode production"
+    "start": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,31 +18,13 @@
   },
   "homepage": "https://github.com/Charlotte-Badger/udemy-proxy-fredrosselet#readme",
   "devDependencies": {
-    "@babel/cli": "^7.1.0",
-    "@babel/core": "^7.1.0",
-    "@babel/plugin-transform-react-jsx": "^7.13.12",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.13.16",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
-    "babel-loader": "^8.0.2",
     "eslint": "^7.25.0",
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
-    "http-proxy-middleware": "^2.0.0",
-    "webpack": "^5.35.1",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev": "^1.1.1"
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "morgan": "^1.10.0",
     "nodemon": "^2.0.7",
-    "path": "^0.12.7",
-    "querystring": "^0.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "path": "^0.12.7"
   }
 }
