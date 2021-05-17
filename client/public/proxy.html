@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Udemized</title>
+    <title>Proxy</title>
+    <!-- <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script> -->
   </head>
   <body>
-    <!-- Overview (Eric) -->
-    <script src="http://localhost:3000/bundle.js"></script>
-    <!-- Course Content (Kyle) -->
-    <script src="http://localhost:9800/course-content-bundle.js"></script>
-    <!-- Sidebar (Jason) -->
+    <div id="overview"></div>
+    <div id="course-content"></div>
+    <div id="sidebar"></div>
+    <div id="reviews"></div>
+
+    <script src="http://localhost:3000/overview.js"></script>
+    <script src="http://localhost:9000/course-content.js"></script>
     <script src="http://localhost:3004/index.js"></script>
-    <!-- Reviews (Fred) -->
     <script src="http://localhost:2712/reviewBundle.js"></script>
-    <div id="Overview"></div>
-    <div id="Course-Content"></div>
-    <div id="Sidebar"></div>
-    <div id="Reviews"></div>
-    <script type="text/javascript" src="proxyBundle.js"></script>
   </body>
 </html>
