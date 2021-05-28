@@ -1,0 +1,30 @@
+{
+  "name": "udemy-proxy-fredrosselet",
+  "version": "1.0.0",
+  "description": "Proxy for Udemy clone (by HR rpt27 team Charlotte Badger)",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charlotte-Badger/udemy-proxy-fredrosselet.git"
+  },
+  "author": "Frederic Rosselet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Charlotte-Badger/udemy-proxy-fredrosselet/issues"
+  },
+  "homepage": "https://github.com/Charlotte-Badger/udemy-proxy-fredrosselet#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7"
+  }
+}
