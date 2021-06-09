@@ -1,15 +1,19 @@
 const express = require('express');
-const cors = require('cors');
-const path = require('path');
 const app = express();
-const PORT = process.env.PORT || 6001;
+const path = require('path');
+const cors = require('cors');
+
+const port = process.env.PORT || 6001;
+const host = process.env.HOST || 'localhost';
+
+app.use('/', express.static(path.join(__dirname, '..', 'client', 'public')));
 
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.use('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'client', 'public', 'proxy.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Proxy server listening on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Proxy server listening at ${port}`);
 });
