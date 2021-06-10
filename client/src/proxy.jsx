@@ -2,9 +2,14 @@ import React from 'react';
 import Overview from './components/overview.jsx';
 import Sidebar from './components/sidebar.jsx';
 import Content from './components/content.jsx';
+import FeaturedReview from './components/featuredReview.jsx';
+import TopCompaniesMiddle from './components/topCompaniesMiddle.jsx';
+import ReportAbuse from './components/reportAbuse.jsx';
+import TopCompaniesFooter from './components/topCompaniesFooter.jsx';
 import Reviews from './components/reviews.jsx';
 
-import { Main } from './styles.js';
+
+import { ProxyBody, ProxyMain } from './styles.js';
 
 class Proxy extends React.Component {
   constructor(props) {
@@ -13,12 +18,18 @@ class Proxy extends React.Component {
 
   render() {
     return (
-      <Main>
+      <ProxyBody>
         <Overview/>
-        <Sidebar/>
-        <Content/>
-        <Reviews/>
-      </Main>
+        <ProxyMain>
+          <Sidebar/>
+          <Content/>
+          <TopCompaniesMiddle/>
+          <FeaturedReview/>
+          <Reviews/>
+          <ReportAbuse/>
+        </ProxyMain>
+        <TopCompaniesFooter/>
+      </ProxyBody>
     );
   }
 }

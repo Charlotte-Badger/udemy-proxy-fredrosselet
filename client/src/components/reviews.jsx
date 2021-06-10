@@ -1,7 +1,10 @@
 import React from 'react';
 
+import { ReviewsWrapper } from '../styles.js';
+
+
 const Reviews = (props) => (
-  <div id="reviews"></div>
+  <ReviewsWrapper id="reviews"/>
 );
 
 export default Reviews;

@@ -1,8 +1,9 @@
 import React from 'react';
-import OverviewWrapper from '../styles.js';
+
+import { OverviewWrapper } from '../styles.js';
 
 const Overview = (props) => (
-  <div id="overview"/>
+  <OverviewWrapper id="overview"/>
 );
 
 export default Overview;

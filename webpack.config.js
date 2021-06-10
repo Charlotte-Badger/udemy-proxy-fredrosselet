@@ -18,5 +18,6 @@ module.exports = {
   output: {
     path: outputPath,
     filename: 'proxyBundle.js'
-  }
+  },
+  devtool: 'eval-cheap-source-map'
 };

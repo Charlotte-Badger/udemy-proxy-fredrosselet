@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { ContentWrapper } from '../styles.js';
+
 const Content = (props) => (
-  <div id="content"></div>
+  <ContentWrapper id="content"/>
 );
 
 export default Content;
