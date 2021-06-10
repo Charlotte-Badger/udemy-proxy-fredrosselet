@@ -4,15 +4,41 @@ export const ProxyBody = styled.div`
   font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
   font-weight: 400;
   line-height: 1.4;
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(60, 59, 55);
+  z-index: 1;
 `;
 
 export const ProxyMain = styled.div`
   margin-left: 5%;
   width: auto;
   max-width: 700px;
-  z-index: 1;
+`;
+
+// Nav bar
+export const NavBarWrapper = styled.div`
+  z-index: 5000;
+  background-color: white;
+`;
+
+export const PrideGradient = styled.div`
+  height: 8px;
+  background: linear-gradient(90deg,  rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18%, rgb(247, 143, 47) 34%, rgb(244, 193, 81) 49%, rgb(82, 187, 118) 66%, rgb(38, 165, 215) 82%, rgb(224, 105, 183) 100%);
+  /* z-index: 5000; */
+`;
+
+export const ProxyNavBar = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 72px;
+  /* z-index: 5000;
+  background-color: white; */
+`;
+
+export const NavBarImage = styled.img`
+  z-index: 5000;
+  background-color: white;
 `;
 
 // SERVICES
@@ -34,9 +60,10 @@ export const fadeIn = keyframes`
 export const SidebarWrapper = styled.div`
   position: fixed;
   right: 5%;
-  z-index: 3000;
+  z-index: 2000;
   /* animation: sidebar-container--fade-in--29ug6 250ms linear 250ms forwards; */
   margin-left: 50px;
+  margin-top: 76px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 4px 12px 0 rgba(0, 0, 0, 0.08);

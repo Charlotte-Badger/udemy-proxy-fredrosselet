@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBar from './components/navBar.jsx';
 import Overview from './components/overview.jsx';
 import Sidebar from './components/sidebar.jsx';
 import Content from './components/content.jsx';
@@ -19,6 +20,7 @@ class Proxy extends React.Component {
   render() {
     return (
       <ProxyBody>
+        <NavBar/>
         <Overview/>
         <ProxyMain>
           <Sidebar/>
