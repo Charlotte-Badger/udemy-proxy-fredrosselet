@@ -10,7 +10,13 @@ import TopCompaniesFooter from './components/topCompaniesFooter.jsx';
 import Reviews from './components/reviews.jsx';
 
 
-import { ProxyBody, ProxyMain } from './styles.js';
+import {
+  ProxyBody,
+  ProxyHeader,
+  ProxyMain,
+  ProxyLeftSide,
+  ProxyFooter
+} from './styles.js';
 
 class Proxy extends React.Component {
   constructor(props) {
@@ -20,17 +26,23 @@ class Proxy extends React.Component {
   render() {
     return (
       <ProxyBody>
-        <NavBar/>
-        <Overview/>
+        <ProxyHeader>
+          <NavBar/>
+        </ProxyHeader>
+        {/* <Overview/> */}
         <ProxyMain>
           <Sidebar/>
-          <Content/>
-          <TopCompaniesMiddle/>
-          <FeaturedReview/>
-          <Reviews/>
-          <ReportAbuse/>
+          <ProxyLeftSide>
+            <Content/>
+            <TopCompaniesMiddle/>
+            <FeaturedReview/>
+            <Reviews/>
+            <ReportAbuse/>
+          </ProxyLeftSide>
         </ProxyMain>
-        <TopCompaniesFooter/>
+        <ProxyFooter>
+          <TopCompaniesFooter/>
+        </ProxyFooter>
       </ProxyBody>
     );
   }

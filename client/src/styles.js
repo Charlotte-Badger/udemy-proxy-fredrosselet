@@ -6,19 +6,25 @@ export const ProxyBody = styled.div`
   line-height: 1.4;
   font-size: 14px;
   color: rgb(60, 59, 55);
-  z-index: 1;
+  /* z-index: 1; */
 `;
 
-export const ProxyMain = styled.div`
-  margin-left: 5%;
-  width: auto;
-  max-width: 700px;
+export const ProxyMain = styled.main`
+  padding: 0 12%;
+`;
+
+// HEADER
+export const ProxyHeader = styled.header`
 `;
 
 // Nav bar
 export const NavBarWrapper = styled.div`
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 72px;
   z-index: 5000;
-  background-color: white;
+  background-color: white; */
 `;
 
 export const PrideGradient = styled.div`
@@ -32,20 +38,88 @@ export const ProxyNavBar = styled.div`
   justify-content: space-around;
   align-items: center;
   height: 72px;
-  /* z-index: 5000;
-  background-color: white; */
+  z-index: 5000;
+  background-color: white;
+  color: rgb(60, 59, 55);
 `;
 
 export const NavBarImage = styled.img`
-  z-index: 5000;
-  background-color: white;
+  /* flex-grow: 1; */
+  /* z-index: 5000; */
+  /* background-color: white; */
+  margin: 0 12px;
+`;
+
+export const NavBarCategories = styled.div`
+  /* flex-grow: 1; */
+  margin: 0 12px;
+`;
+
+export const NavBarSearch = styled.div`
+  /* flex-grow: 2; */
+  background-color: rgb(251, 251, 248);
+  flex: 1 20%;
+  display: flex;
+  align-items: center;
+  border: solid 1px rgb(152, 149, 134);
+  height: 48px;
+  padding: 12px 20px;
+  margin: 4px 12px;
+  border-radius: 32px;
+  outline: none;
+  &:hover {
+    border-color: rgb(121,118,103);
+  }
+`;
+
+export const NavBarSearchSVG = styled.svg`
+`;
+
+export const NavBarSearchBar = styled.input`
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 16px 0 4px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+`;
+
+export const NavBarBusiness = styled.div`
+  margin: 0 12px;
+`;
+
+export const NavBarTeach = styled.div`
+  /* flex-grow: 1; */
+  margin: 0 12px;
+`;
+
+export const NavBarCart = styled.svg`
+  /* flex-grow: 1; */
+  margin: 0 12px;
+`;
+
+export const NavBarLogin = styled.button`
+  /* flex-grow: 1; */
+  margin: 0 12px;
+`;
+
+export const NavBarSignup = styled.button`
+  /* flex-grow: 1; */
+  margin: 0 12px;
+`;
+
+export const NavBarLanguage = styled.button`
+  /* flex-grow: 1; */
+  margin: 0 12px;
 `;
 
 // SERVICES
 export const OverviewWrapper = styled.div`
-  background-color: rgb(30, 30, 28);
-  padding-top: 20px;
-  padding-left: 5%;
+  margin-top: 72px;
+  /* background-color: rgb(30, 30, 28); */
+  /* padding-top: 20px; */
+  /* padding-left: 5%; */
 `;
 
 export const fadeIn = keyframes`
@@ -57,27 +131,40 @@ export const fadeIn = keyframes`
   }
 `;
 
+// while main part of Overview is visible, Sidebar is static
+
+// once main part of Overview has disappeared, Sidebar animates back up, becomes fixed, covers Overview banner, and has no video
+
+// once the footer appears, Sidebar becomes static again
+
 export const SidebarWrapper = styled.div`
-  position: fixed;
-  right: 5%;
+  position: sticky;
+  float: right;
+  clear: left;
+  margin-bottom: 48px;
   z-index: 2000;
   /* animation: sidebar-container--fade-in--29ug6 250ms linear 250ms forwards; */
-  margin-left: 50px;
-  margin-top: 76px;
+
+  top: 16px;
   background-color: white;
-  border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
   display: inline-block;
-  top: 25px;
   animation-name: ${fadeIn};
 `;
 
+// LEFT SIDE
+export const ProxyLeftSide = styled.div`
+  width: auto;
+  /* margin-left: 12%; */
+  max-width: 700px;
+  padding: 32px 48px 48px 0;
+`;
+
 export const ContentWrapper = styled.div`
-  /* max-width: 600px; */
+  margin-bottom: 40px;
 `;
 
 export const FeaturedReviewWrapper = styled.div`
-  /* max-width: 600px; */
 `;
 
 export const ReviewsWrapper = styled.div`
@@ -148,7 +235,6 @@ export const TryUdemyForBusiness = styled.a`
 
 // Report Abuse
 export const ReportAbuseWrapper = styled.div`
-  height: 72px;
   border-top: 1px solid rgb(220, 218, 203);
 `;
 
@@ -168,7 +254,7 @@ export const ReportAbuseButton = styled.button`
   font-weight: 700;
   padding: 16px;
   margin-top: 16px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   &:hover {
     color: rgb(9, 76, 89);
     border-color: rgb(28, 106, 120);
@@ -178,6 +264,9 @@ export const ReportAbuseButton = styled.button`
     border-color: rgb(28, 106, 120);
   }
 `;
+
+// FOOTER
+export const ProxyFooter = styled.footer``;
 
 // "Top Companies" footer
 export const TopCompaniesFooterWrapper = styled.div`
