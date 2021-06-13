@@ -15,16 +15,14 @@ export const ProxyMain = styled.main`
 
 // HEADER
 export const ProxyHeader = styled.header`
+  position: absolute;
+  width: 100%;
+  z-index: 5000;
 `;
 
 // Nav bar
 export const NavBarWrapper = styled.div`
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 72px;
-  z-index: 5000;
-  background-color: white; */
+
 `;
 
 export const PrideGradient = styled.div`
@@ -44,19 +42,16 @@ export const ProxyNavBar = styled.div`
 `;
 
 export const NavBarImage = styled.img`
-  /* flex-grow: 1; */
-  /* z-index: 5000; */
-  /* background-color: white; */
   margin: 0 12px;
+  width: 110px;
+  height: 32px;
 `;
 
 export const NavBarCategories = styled.div`
-  /* flex-grow: 1; */
   margin: 0 12px;
 `;
 
 export const NavBarSearch = styled.div`
-  /* flex-grow: 2; */
   background-color: rgb(251, 251, 248);
   flex: 1 20%;
   display: flex;
@@ -90,33 +85,27 @@ export const NavBarBusiness = styled.div`
 `;
 
 export const NavBarTeach = styled.div`
-  /* flex-grow: 1; */
   margin: 0 12px;
 `;
 
 export const NavBarCart = styled.svg`
-  /* flex-grow: 1; */
   margin: 0 12px;
 `;
 
 export const NavBarLogin = styled.button`
-  /* flex-grow: 1; */
   margin: 0 12px;
 `;
 
 export const NavBarSignup = styled.button`
-  /* flex-grow: 1; */
   margin: 0 12px;
 `;
 
 export const NavBarLanguage = styled.button`
-  /* flex-grow: 1; */
   margin: 0 12px;
 `;
 
 // SERVICES
 export const OverviewWrapper = styled.div`
-  margin-top: 72px;
   /* background-color: rgb(30, 30, 28); */
   /* padding-top: 20px; */
   /* padding-left: 5%; */
@@ -155,8 +144,8 @@ export const SidebarWrapper = styled.div`
 // LEFT SIDE
 export const ProxyLeftSide = styled.div`
   width: auto;
-  /* margin-left: 12%; */
-  max-width: 700px;
+
+  max-width: 650px;
   padding: 32px 48px 48px 0;
 `;
 
@@ -165,6 +154,13 @@ export const ContentWrapper = styled.div`
 `;
 
 export const FeaturedReviewWrapper = styled.div`
+`;
+
+export const AuthorWrapper = styled.div`
+  padding: 0;
+  height: 1000px;
+  /* min-height: 600px; */
+  margin-bottom: 1000px;
 `;
 
 export const ReviewsWrapper = styled.div`
