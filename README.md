@@ -1,5 +1,6 @@
 # udemy-proxy-fredrosselet
 Proxy for Udemy Clone (Front End Capstone project by Hack Reactor RPT27 team Charlotte Badger https://github.com/Charlotte-Badger)
+Full version here: https://github.com/Charlotte-Badger/udemy-proxy-carinij
 
 ## Related Projects
 - Course Content
@@ -22,12 +23,10 @@ https://github.com/Charlotte-Badger/Reviews
 
 ## Installation
 ### Installing dependencies
-From within the Reviews directory:
 ```sh
 npm install
 ```
 ### Starting the server
-From within the Reviews directory:
 ```sh
 npm start
 ```
