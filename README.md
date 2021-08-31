@@ -1,5 +1,5 @@
-# udemy-proxy-fredrosselet
-Proxy for Udemy Clone (Front End Capstone project by Hack Reactor RPT27 team Charlotte Badger https://github.com/Charlotte-Badger)
+# Udemy proxy
+Reverse Proxy for Udemy Clone (Front End Capstone project by Hack Reactor RPT27 team Charlotte Badger https://github.com/Charlotte-Badger)
 Full version here: https://github.com/Charlotte-Badger/udemy-proxy-carinij
 
 ## Related Projects
